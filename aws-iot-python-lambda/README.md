@@ -34,7 +34,7 @@ aws lambda invoke --function-name iot outputfile.txt
 
 ### Create a topic rule for Lambda
 ```sh
-aws iot create-topic-rule --rule-name invokeLambda --topic-rule-payload file://lambda-rule.json
+aws iot create-topic-rule --rule-name invokeLambda --topic-rule-payload file://iot-lambda-rule.json
 ```
 
 ### Create lambda trigger
