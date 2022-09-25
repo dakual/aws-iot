@@ -8,7 +8,7 @@ aws iam create-role --role-name iot-lambda-role --assume-role-policy-document fi
 
 > Make sure you save the ARN from the output.
 
-### Grant Permissions to the Role
+### Grant Permissions to the Role for AWS CloudWatch
 ```sh
 aws iam create-policy --policy-name iot-lambda-policy --policy-document file://lambda-role-policy.json
 ```
