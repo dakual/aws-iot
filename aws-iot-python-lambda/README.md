@@ -4,7 +4,9 @@ zip function.zip index.js
 ```
 
 ### Create an IAM Role for AWS Lambda
+```sh
 aws iam create-role --role-name iot-lambda-role --assume-role-policy-document file://lambda-role.json
+```
 
 > Make sure you save the ARN from the output.
 
