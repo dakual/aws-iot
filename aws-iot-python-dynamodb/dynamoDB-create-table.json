@@ -1,0 +1,15 @@
+{
+  "TableName": "iot",
+  "KeySchema": [
+    { "AttributeName": "key", "KeyType": "HASH" },
+    { "AttributeName": "timestamp", "KeyType": "RANGE" }
+  ],
+  "AttributeDefinitions": [
+    { "AttributeName": "key", "AttributeType": "S" },
+    { "AttributeName": "timestamp", "AttributeType": "S" }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}
