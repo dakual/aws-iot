@@ -11,4 +11,5 @@ aws iot create-policy --policy-name "myPolicy" --policy-document file://iotpolic
 aws iot attach-principal-policy --principal "<certificate-arn>" --policy-name "myPolicy"
 aws iot attach-thing-principal --thing-name "myIOT" --principal "<certificate-arn>"
 aws iot describe-endpoint
+aws iot describe-endpoint --endpoint-type iot:Data-ATS
 ```
